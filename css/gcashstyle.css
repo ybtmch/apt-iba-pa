@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+.custom-blue {
+    background-color: #0057e4;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-white {
+    background-color: #ebecf0; /* Color for white background */
+    height: 580px; /* Adjust the height as needed */
+}
+
+.gcash-logo {
+    height: 120px; /* Adjust the height as needed */
+    /* Adjust the margin-top as needed */
+}
+
+/* Add styles for the white square */
+.white-square {
+    background-color: #ffffff;
+    box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 425px; /* Set a maximum width */
+    height: 385px; /* Adjust the height as needed */
+    margin: auto; /* Center the square horizontally */
+    margin-top: -135px; /* Adjust the margin-top as needed */
+
+     
+}
+.labelgcash{
+    font-weight: 500;
+    color: rgb(181, 181, 181);
+    font-family: 'Poppins', 'sans-serif';
+    
+}
+.valuegcash{
+    color:#297bfa ;
+    font-family:'Poppins', 'sans-serif' ;
+}
+
+
+
+.mobile-number-input {
+    border-radius: 0px;
+    border-right: none;
+    border-top: none;
+}
+.input-group-text{
+    border-left: none;
+    border-top: none;
+    border-radius: 0px;
+}
+.input-group-text {
+    background-color: transparent !important;
+   
+}
+.mobile-number-input:focus {
+    
+    border-color: grey; /* Set to another color if needed */
+    box-shadow: none; /* Optional: Remove any box shadow */
+}
+.mobile-number-input::placeholder {
+    font-weight: 500;
+    color: rgb(199, 199, 199); /* Set your desired font weight */
+}
+.input-group {
+    position: relative;
+}
+
+.warning-message {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    display: none;
+}
+
+.input-error {
+    border-color: red !important;
+}
+.custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #297bfa; /* Default background color (blue) */
+    color: #ffffff; /* Default text color (white) */
+    height: 48px; /* Default height */
+    width: 310px; /* Default width */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Poppins', 'sans-serif' ;
+    transition: background-color 0.3s ease; 
+   
+}
+
+/* Add more specific styles or override defaults for customization */
+.custom-button:hover {
+    background-color: #49576c; /* Change background color on hover */
+}
+
+.custom-button span {
+    padding: 5px; /* Add padding inside the button */
+}
+
+.custom-button:disabled {
+    background-color: #7aacf8; /* Change background color for disabled state */
+    cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+.custom-button:hover:disabled {
+    background-color: #7aacf8; /* Change background color for disabled state on hover */
+}
+
+
+
+.mobile-number-input {
+    width: 200px; /* Adjust the width of the input field */
+    padding: 5px; /* Add padding inside the input field */
+}
+
+
+@media (max-width: 768px) {
+    .white-square {
+        height: 380px; /* Adjust the height for smaller screens */
+        margin-top: -110px; /* Adjust the margin-top for smaller screens */
+    }
+}
+@media (max-width: 1440px) {
+    .white-square {
+        height: 380px; /* Adjust the height for smaller screens */
+        margin-top: -110px; /* Adjust the margin-top for smaller screens */
+    }
+}

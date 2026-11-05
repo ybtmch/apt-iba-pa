@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --body-color: #E4E9F7;
+   --light-bg: #eee;
+      	/* Variables for storing colors */
+	--card-clr: #161922;
+	--body-clr: #191d28;
+	--primary-clr: #f0bf6a;
+	--heading-clr: #dadada;
+	--text-clr: #767a86;
+   
+   --dark-jungle-green: hsl(188, 63%, 7%);
+   --prussian-blue: hsl(200, 69%, 14%);
+   --prussian-pale: hsl(201, 19%, 42%);
+   --raisin-black-1: hsl(227, 29%, 13%);
+   --raisin-black-2: hsl(229, 17%, 19%);
+   --yellow-green: hsl(89, 72%, 45%);
+   --orange-soda: hsl(9, 100%, 62%);
+   --orange-tangy: hsla(9, 100%, 62%, 0.1);
+   --orange-pale: hsl(9, 100%, 73%);
+   --cultured-1: hsl(0, 0%, 93%);
+   --cultured-2: hsl(192, 24%, 96%);
+   --misty-rose: hsl(7, 56%, 91%);
+   --alice-blue: hsl(210, 100%, 97%);
+   --seashell: hsl(8, 100%, 97%);
+   --cadet: hsl(200, 15%, 43%);
+   --white: hsl(0, 0%, 100%);
+   --black: hsl(0, 0%, 0%);
+   --opal: hsl(180, 20%, 62%);
+}
+
+
+*::-webkit-scrollbar-thumb {
+   background-color: #232A3D;
+   border-radius: 5rem;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body {
+   background-color: var(--body-color);
+}
+
+section {
+   padding: 3rem 2rem;
+
+   margin: 0 auto;
+}
+/* removed from section  max-width: 1200px; */
+
+/* nav */
+
+.nav-item img{
+	width: 36px;
+	height: 36px;
+	object-fit: cover;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#navbarNav li {
+   font-size: 1.6rem;
+   font-weight: 600;
+   padding: 1rem;
+   border-radius: 5px;
+}
+
+
+#navbarNav li a:hover, #navbarNav li a:focus{
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 8px;
+
+}
+
+.signOutbtn .btn {
+   background-color: var(--prussian-blue);
+   color: #FFF;
+   font-size: 1.5rem;
+}
+
+.signOutbtn .btn:hover {
+   background-color: var(--orange-soda);
+   color: #E4E9F7;
+}
+
+
+
+/* Dropdown Notif */
+
+li.nav-item.dropdown-center {
+   list-style-type: none; /* This will remove the list marker */
+ }
+
+button.nav-link.dropdown-toggle::after {
+   content: none;
+ }
+ 
+.btnNotif{
+   border: none;
+}
+
+
+/* Off Canvas Messages */
+
+.offcanvas-title{
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.offcanvas-body .btn {
+   color: var(--orange-soda);
+   border-color: var(--orange-soda);
+}
+
+.offcanvas-body .btn:hover {
+   color: var(--white);
+   background-color: var(--orange-soda);
+}
+
+.offcanvas-body .row.borderChat{
+   border-top: 1px solid rgb(190, 190, 190);
+   border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.offcanvas-body .row.borderChat:hover{
+   background-color: hsl(12, 100%, 83%);
+   cursor: pointer;
+}
+
+.offcanvas-body .row.borderChat .nameChat{
+   font-weight: 600;
+   font-size: 16px;
+   color: var(--prussian-blue);
+}
+
+.offcanvas-body .row.borderChat .messageChat{
+   font-size: 14px;
+   color: grey;
+}
+
+
+/* Notifications Offcanvas */
+
+.offcanvas-body .row.borderNotif .notifTitle{
+   font-weight: 600;
+   font-size: 16px;
+   color: var(--prussian-blue);
+}
+
+.offcanvas-body .row.borderNotif .notifDetails{
+   font-size: 13px;
+   color: grey;
+}
+
+.offcanvas-body .row.borderNotif{
+   border-top: 1px solid rgb(190, 190, 190);
+   border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.offcanvas-body .row.borderNotif:hover{
+   background-color: hsl(0, 0%, 88%);
+   cursor: pointer;
+}
+
+/* Menu [mobile] Offcanvas */
+
+.offcanvas-body .row.borderMenu .menuNav{
+   font-weight: 600;
+   font-size: 14px;
+   color: var(--prussian-blue);
+}
+
+.offcanvas-body .row.borderMenu .signOutbtn .btn {
+   background-color: var(--prussian-blue);
+   color: #FFF;
+   font-size: 1.5rem;
+   border-color: transparent;
+}
+
+.offcanvas-body .row.borderMenu .notifdDetails{
+   font-size: 14px;
+   color: grey;
+}
+
+.offcanvas-body .row.borderMenu{
+   border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.offcanvas-body .row.borderMenu:hover{
+   background-color: hsl(12, 100%, 83%);
+   cursor: pointer;
+}
+
+
+
+/* Top Navbar Styles - Initially displayed */
+.top-navbar {
+   display: block;
+ }
+ 
+ /* Bottom Navbar Styles - Initially hidden */
+ .mobile-nav {
+   display: none;
+   background: #F1F1F1;
+   position: fixed;
+   bottom: 0;
+   height: 65px;
+   width: 100%;
+   justify-content: space-around;
+   z-index: 999;
+ }
+ 
+ /* Media Query for Screens <576px (Phone View) */
+ @media screen and (max-width: 575px) {
+   /* Hide top navbar and show bottom navbar */
+ 
+   .mobile-nav {
+     display: flex;
+   }
+ }
+ 
+
+
+
+ .bloc-icon img {
+   width: 30px;
+ }
+
+ .bloc-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ button.btn.bloc-icon {
+    border: none;
+    outline: none;
+ }
+ 
+ button.btn.bloc-icon:focus,button.btn.bloc-icon:active:focus,button.btn.bloc-icon.active:focus,
+ button.btn.bloc-icon.focus,button.btn.bloc-icon:active.focus,button.btn.bloc-icon.active.focus {
+     outline: none;
+ }
+ 
+
+ /* ChatBox */
+ 
+ #offcanvasChatBox a.nav-link {
+    color: gray;
+    font-size: 18px;
+    padding: 0;
+ }
+ 
+ #offcanvasChatBox .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #e84118;
+    flex: none;
+ }
+
+ #offcanvasChatBox .chatIcons{
+   font-size: 14px;
+   color: var(--prussian-blue);
+ }
+
+ #offcanvasChatBox .chatName{
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--prussian-blue);
+ }
+ 
+ #offcanvasChatBox input:focus {
+    outline: 0px !important;
+    box-shadow: none !important;
+ }
+ 
+ #offcanvasChatBox .card-text {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.3rem;
+ }
+
+ #offcanvasChatBox .small{
+   font-size: 1rem;
+}
+
+ /* EMPTY ChatBox */
+ 
+ #offcanvasEmptyChatBox a.nav-link {
+   color: gray;
+   font-size: 18px;
+   padding: 0;
+}
+
+#offcanvasEmptyChatBox .avatar {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 2px solid #e84118;
+   flex: none;
+}
+
+#offcanvasEmptyChatBox .chatIcons{
+  font-size: 14px;
+  color: var(--prussian-blue);
+}
+
+#offcanvasEmptyChatBox .chatName{
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--prussian-blue);
+ }
+
+#offcanvasEmptyChatBox input:focus {
+   outline: 0px !important;
+   box-shadow: none !important;
+}
+
+#offcanvasEmptyChatBox .card-text {
+   border: 2px solid #ddd;
+   border-radius: 8px;
+   font-size: 1.3rem;
+}
+
+#offcanvasEmptyChatBox .small{
+  font-size: 1rem;
+}
+
+#content nav img{
+	width: 36px;
+	height: 36px;
+	object-fit: cover;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.nav-item img{
+	width: 36px;
+	height: 36px;
+	object-fit: cover;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.nav-item .dropdown .wrapper{
+   position: absolute;
+   bottom: 0;
+   right: 550%;
+}
+
+.nav-item .dropdown .wrapper ul{
+   width: 200px;
+}
+
+
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 70%;
+    right: 15px;
+    width: 250px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin: 10px; 
+}
+
+
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+}
+
+
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px)
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+.sub-menu-link:hover img {
+    transform: translateX(-5px)
+}

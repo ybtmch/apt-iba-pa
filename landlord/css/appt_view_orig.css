@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --body-color: #E4E9F7;
+   --light-bg: #eee;
+   	/* Variables for storing colors */
+	--card-clr: #161922;
+	--body-clr: #191d28;
+	--primary-clr: #f0bf6a;
+	--heading-clr: #dadada;
+	--text-clr: #767a86;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: #232A3D;
+   border-radius: 5rem;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body {
+   background-color: var(--body-color);
+}
+
+section {
+   padding: 3rem 2rem;
+   margin: 0 auto;
+}
+
+
+
+
+
+
+/* Navbar */
+
+.navbarNav .nav-link {
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+   font-size: 1.5rem;
+   padding: 1rem;
+   border-radius: 5px;
+}
+
+.nav-item .nav-link:hover {
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+}
+
+.nav-item .nav-link:hover {
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 5px;
+
+}
+
+
+.signOutbtn .btn {
+   background-color: #232A3D;
+   color: #FFF;
+   font-size: 1.5rem;
+}
+
+.signOutbtn .btn:hover {
+   background-color: #E4E9F7;
+   color: #232A3D;
+}
+
+/* Appointment */
+
+.accomJumbuildings {
+   background: url('../images/header3.png') no-repeat bottom fixed;
+   background-size: 100%;
+}
+
+.bgTimeSlots{
+   background: url('../images/header3.png') no-repeat bottom;
+   background-size: 100%;
+}
+
+.datePicker #pick-date{
+   text-align: center;
+}
+
+/* Waves */
+
+.custom-shape-divider-top-1691000602 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1691000602 svg {
+   position: relative;
+   display: block;
+   width: calc(134% + 1.3px);
+   height: 314px;
+}
+
+.custom-shape-divider-top-1691000602 .shape-fill {
+   fill: #d5def7;
+}
+
+/* Time Slots content */
+
+.viewAppoint {
+    text-align: left;
+    font-size: 3rem;
+    color: var(--black);
+ }
+
+.appointments .apptDate{
+   font-size: 50px;
+   color: #232A3D;
+   font-weight: 600;
+}
+
+.timeSlots {
+   background-color: #FFF;
+   margin-bottom: 100px;
+}
+
+.timeSlots .dayzone{
+   font-size: 30px;
+   color: #232A3D;
+   font-weight: 700;
+}
+
+.timeSlots .timezone{
+   font-size: 15px;
+   color: #232A3D;
+}
+
+/* margin-left: 230px;
+margin-left: 230px; */
+.avatar {
+   position: absolute;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   top: -50px;
+   width: 95px;
+   height: 95px;
+   border-radius: 50%;
+   z-index: 9;
+   background: #70c5c0;
+   padding: 15px;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* If user has an appointment the tag is activated */
+.scheduled{
+   background-color: #232A3D;
+   color: #FFF;
+}
+
+.timeSlots .btn {
+   background-color: #232A3D;
+   color: #FFF;
+   font-size: 1.5rem;
+   border-radius: 25px;
+   width: 150px;
+   height: 40px;
+   padding-top: 9px;
+   text-align: center;
+   border: none;
+}
+
+.timeSlots .btn:hover {
+   background-color: var(--primary-clr) !important;
+   color: #e9e9e9;
+}
+
+
+/* Time slots Modal */
+/* #modal{
+   width: 500px;
+   height: 1600px;
+   justify-content: center;
+} */
+
+.modal-title{
+   font-size: 16px;
+}
+
+.modal-Section{
+   width: 1500px;
+}
+
+.modal-body .h5{
+   font-size: 16px;
+}
+
+.modal-body .h6{
+   font-size: 15px;
+}
+
+
+
+
+/* Footer */
+
+.site-footer {
+    background-color: #DEE7ED;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+ }
+ 
+ .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+ }
+ 
+ .site-footer hr.small {
+    margin: 20px 0
+ }
+ 
+ .site-footer h6 {
+    color: #232A3D;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+ }
+ 
+ .site-footer h2{
+    font-size: 3.5rem;
+ }
+ 
+ .site-footer .text-justify{
+    text-align: justify;
+ }
+ 
+ .site-footer a {
+    color: #737373;
+ }
+ 
+ .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+ }
+ 
+ .footer-links {
+    padding-left: 0;
+    list-style: none
+ }
+ 
+ .footer-links li {
+    display: block
+ }
+ 
+ .footer-links a {
+    color: #737373
+ }
+ 
+ .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+ }
+ 
+ .footer-links.inline li {
+    display: inline-block
+ }
+ 
+ .site-footer .social-icons {
+    text-align: left
+ }
+ 
+ .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+ }
+ 
+ .copyright-text {
+    margin: 0
+ }
+ 
+ @media (max-width:991px) {
+    .site-footer [class^=col-] {
+       margin-bottom: 30px
+    }
+ }
+ 
+ @media (max-width:767px) {
+    .site-footer {
+       padding-bottom: 0
+    }
+ 
+    .site-footer .copyright-text, .site-footer .social-icons {
+       text-align: center
+    }
+ }
+ 
+ .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+ }
+ 
+ .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+ }
+ 
+ .social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+ }
+ 
+ .social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+ }
+ 
+ .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+ }
+ 
+ .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+ }
+ 
+ .social-icons a.facebook:hover {
+    background-color: #3b5998
+ }
+ 
+ .social-icons a.twitter:hover {
+    background-color: #00aced
+ }
+ 
+ .social-icons a.linkedin:hover {
+    background-color: #007bb6
+ }
+ 
+ .social-icons a.dribbble:hover {
+    background-color: #ea4c89
+ }
+ 
+ @media (max-width:767px) {
+    .social-icons li.title {
+       display: block;
+       margin-right: 0;
+       font-weight: 600
+    }
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

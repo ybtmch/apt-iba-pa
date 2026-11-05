@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --body-color: #E4E9F7;
+   --light-bg: #eee;
+   	/* Variables for storing colors */
+	--card-clr: #161922;
+	--body-clr: #191d28;
+	--primary-clr: #f0bf6a;
+	--heading-clr: #dadada;
+	--text-clr: #767a86;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: #232A3D;
+   border-radius: 5rem;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body {
+   background-color: var(--body-color);
+}
+
+section {
+   padding: 3rem 2rem;
+   margin: 0 auto;
+}
+
+
+
+/* Property Gallery Overview */
+
+.backToView{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.galleryOverview{
+    margin-top: 7%;
+}
+
+.saveEditButton{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.modal-title {
+    font-size: 28px;
+    font-weight: 600;
+ }
+ 
+ .editCarouselImg .inputImgTitle{
+    font-size: 14px;
+    font-weight: 500;
+ }
+ 
+  .editCarouselImg .inputImgSubtitle{
+    font-size: 10px;
+    font-weight: 500;
+  }
+ 
+  .editCarouselImg .galleryCaption{
+    font-size: 14px;
+    font-weight: 500;
+  }
+ 
+  .deleteCarouselImg .deleteDescrip{
+    font-size: 14px;
+    font-weight: 500;
+  }
+ 
+.img-container img {
+    border-radius: 2px;
+  }
+ 
+.galleryTitle{
+    font-size: 16px;
+    font-weight: 600;
+  }
+ 
+.galleryCaption{
+    font-size: 14px;
+    font-weight: 500;
+  }
+ 
+  .editGallery .img-container img {
+    border-radius: 2px;
+  }
+ 
+  .editGallery .galleryTitle{
+    font-size: 16px;
+    font-weight: 600;
+  }
+ 
+  .editGallery .galleryCaption{
+    font-size: 14px;
+    font-weight: 500;
+  }
+ 
+  .flex-nowrap::-webkit-scrollbar{
+    display: none;
+  }
+ 
+  /* .viewGallery .container .carouselViewG-container img {
+    height: 400px;
+ } */
+ 
+ 
+ /* .carousel-container .item .card:hover img {
+    height: 400px;
+    opacity:0.5;
+ }
+ 
+ .carousel-container .item .card:hover i{
+    display: block;
+ }
+ 
+ .carousel-container .item .card i{
+    display: none;
+ }
+ 
+ .carousel-container .item .card .btnEditG{
+    top: 40%;
+    left: 38%;
+    transition: color 0.5s ease;
+ }
+ 
+ .carousel-container .item .card .btnEditG:hover{
+    color: var(--primary-clr) !important;
+ } */
+ 
+ /* .btnMenuGal{
+    border-radius: 70px;
+ 
+ } */
+ 
+ .dropAction{
+    top: 3%;
+    right: 3%;
+ }
+ 
+ 
+ .dropActionMobile{
+    top: 3%;
+    right: 3%;
+ }
+ 
+ 
+ ::selection{
+    color: #fff;
+    background: #6990F2;
+  }
+ 
+ form{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 33%;
+  }
+  
+  form :where(i, p){
+    color: #232A3D;
+  }
+  form i{
+    font-size: 25px;
+    text-align: center;
+  }
+  form p{
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  
+ .img-fluid{
+    height: 100px;
+ }

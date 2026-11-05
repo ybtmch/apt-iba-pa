@@ -1,0 +1,18 @@
+{
+    "autoload": {
+        "psr-4":{"Models\\": "models/"
+    }
+    },
+    "authors": [
+        {
+            "name": "jiaorem",
+            "email": "yabut.micohjomarie@auf.edu.ph"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "guzzlehttp/guzzle": "^7.0",
+        "phpmailer/phpmailer": "^6.8.1",
+        "stripe/stripe-php": "^13.2"
+    }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --body-color: #E4E9F7;
+   --light-bg: #eee;
+      	/* Variables for storing colors */
+	--card-clr: #161922;
+	--body-clr: #191d28;
+	--primary-clr: #f0bf6a;
+	--heading-clr: #dadada;
+	--text-clr: #767a86;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: #232A3D;
+   border-radius: 5rem;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body {
+   background-color: var(--body-color);
+}
+
+section {
+   padding: 3rem 2rem;
+
+   margin: 0 auto;
+}
+/* removed from section  max-width: 1200px; */
+
+
+
+
+
+/* Navbar */
+
+.navbarNav .nav-link {
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+   font-size: 1.5rem;
+   padding: 1rem;
+   border-radius: 5px;
+}
+
+.nav-item .nav-link:hover {
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+}
+
+.nav-item .nav-link:hover {
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 5px;
+
+}
+
+.d-flex .btn {
+   background-color: #232A3D;
+   color: #FFF;
+   font-size: 1.5rem;
+}
+
+.d-flex .btn:hover {
+   background-color: #E4E9F7;
+   color: #232A3D;
+}

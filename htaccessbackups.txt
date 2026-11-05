@@ -1,0 +1,49 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # To externally redirect /dir/file.php to /dir/file
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+)\.php [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # To internally forward /dir/file to /dir/file.php
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # To externally redirect /dir/file.php to /dir/file
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+)\.php [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # To internally forward /dir/file to /dir/file.php
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # To externally redirect /dir/file.php to /dir/file
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+)\.php [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # To internally forward /dir/file to /dir/file.php if the .php file exists
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+    # Allow both versions (with and without .php extension) for AJAX requests
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>

@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --body-color: #E4E9F7;
+   --light-bg: #eee;
+      	/* Variables for storing colors */
+	--card-clr: #161922;
+	--body-clr: #191d28;
+	--primary-clr: #f0bf6a;
+	--heading-clr: #dadada;
+	--text-clr: #767a86;
+
+   
+   --dark-jungle-green: hsl(188, 63%, 7%);
+   --prussian-blue: hsl(200, 69%, 14%);
+   --prussian-pale: hsl(201, 19%, 42%);
+   --raisin-black-1: hsl(227, 29%, 13%);
+   --raisin-black-2: hsl(229, 17%, 19%);
+   --yellow-green: hsl(89, 72%, 45%);
+   --orange-soda: hsl(9, 100%, 62%);
+   --orange-tangy: hsla(9, 100%, 62%, 0.1);
+   --orange-pale: hsl(9, 100%, 73%);
+   --cultured-1: hsl(0, 0%, 93%);
+   --cultured-2: hsl(192, 24%, 96%);
+   --misty-rose: hsl(7, 56%, 91%);
+   --alice-blue: hsl(210, 100%, 97%);
+   --seashell: hsl(8, 100%, 97%);
+   --cadet: hsl(200, 15%, 43%);
+   --white: hsl(0, 0%, 100%);
+   --black: hsl(0, 0%, 0%);
+   --opal: hsl(180, 20%, 62%);
+}
+
+
+*::-webkit-scrollbar-thumb {
+   background-color: #232A3D;
+   border-radius: 5rem;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body {
+   background-color: var(--body-color);
+   background: url('../images/header4.png') no-repeat fixed bottom;
+   background-size: cover;
+}
+
+section {
+   padding: 3rem 2rem;
+   margin: 0 auto;
+}
+
+
+
+/* Navbar */
+
+.navbarNav .nav-link {
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+   font-size: 1.5rem;
+   font-weight: 600;
+   padding: 1rem;
+   border-radius: 5px;
+}
+
+
+.nav-item .nav-link:hover, .nav-item .nav-link:focus{
+   background-color: #232A3D;
+   color: #FFF;
+   border-radius: 5px;
+
+}
+
+
+.signOutbtn .btn {
+   background-color: var(--prussian-blue);
+   color: #FFF;
+   font-size: 1.5rem;
+}
+
+.signOutbtn .btn:hover {
+   background-color: var(--orange-soda);
+   color: #E4E9F7;
+}
+
+/* .d-flex .btn {
+   background-color: #232A3D;
+   color: #FFF;
+   font-size: 1.5rem;
+}
+
+.d-flex .btn:hover {
+   background-color: #E4E9F7;
+   color: #232A3D;
+} */
+
+.form-control{
+   font-size: 1.5rem;
+}
+
+.myApt {
+   color: var(--prussian-blue);
+}
+
+
+/* Featured Buttons */
+
+.btnStatusC,
+.inline-btn {
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   color: #fff;
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.6rem;
+   border: none;
+}
+
+.btnStatusC:hover,
+.inline-btn:hover {
+   color:green;
+   background-color: transparent;
+   border-color: green;
+   border: 1px solid;
+
+}
+
+.btnStatusC {
+   background-color:#003E1F;
+   display: block;
+   width: 100%;
+   border-radius: 15px;
+   text-decoration: none;
+}
+
+.btnStatusD,
+.inline-btn {
+   margin-top: 1rem;
+   color: #fff;
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.6rem;
+   padding-left: 25px;
+   padding-right: 27px;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   border-color: transparent;
+}
+
+.btnStatusD:hover,
+.inline-btn:hover {
+   color:#8B0000;
+   background-color: transparent;
+   border-color: #8B0000;
+   border: 1px solid;
+
+}
+
+.btnStatusD {
+   background-color:#AC202E;
+   display: block;
+   width: 100%;
+   border-radius: 15px;
+   text-decoration: none;
+}
+
+/* Accommodations */
+
+/* .reservationBg {
+   background: url('../images/header3.png') no-repeat fixed bottom;
+   background-size: cover;
+} */
+
+.p-30{
+   padding: 30px;
+}
+.main-datatable {
+   padding: 0px; 
+   border: 1px solid #f3f2f2;
+   border-bottom: 0;
+   box-shadow: 0px 2px 10px rgba(0,0,0,.05);
+}
+.d-flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.card_body{ 
+   background-color: white;
+   border: 1px solid transparent;
+   border-radius: 2px;
+   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.main-datatable .row {
+   margin: 0;
+} 
+.searchInput {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   position: relative;
+   justify-content: flex-end;
+   padding: 0px 4px;
+}
+.searchInput input {
+   border: 1px solid #e5e5e5;
+   border-radius: 50px;
+   margin-left: 8px;
+   height: 34px;
+   width: 100%;
+   padding: 0px 25px 0px 10px;
+   transition: all .6s ease;
+}
+.searchInput label {
+   color: #767676;
+   font-weight: normal;
+}
+
+
+.dim_button {
+   display: inline-block;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 6px;
+   background: rgb(57, 85, 136);
+   margin-right: 10px;
+   position: relative;
+   cursor: pointer;
+   font-weight: 600;
+   margin-bottom: 20px;
+} 
+.createSegment a { 
+   margin-bottom: 0px;
+   border-radius: 50px;
+   background: #ffffff;
+   border: 1px solid #007bff;
+   color: #007bff;
+   transition: all .4s ease;
+}
+.createSegment a:hover, .createSegment a:focus {
+   transition: all .4s ease;
+   background: var(--orange-soda);
+   color: #fff;
+}
+.add_flex{
+   display: flex;
+   justify-content: flex-end;
+   padding-right:0px;
+}
+.main-datatable .dataTable.no-footer {
+   border-bottom: 1px solid #eee;
+}
+.main-datatable .cust-datatable thead {
+   background-color: #f9f9f9;
+}
+.main-datatable .cust-datatable>thead>tr>th {
+   border-bottom-width: 0;
+   color: #443f3f;
+   font-size: 1.6rem;
+   font-weight: 600;
+   padding: 16px 10px;
+   vertical-align: middle;
+   padding-left: 18px;
+   text-align: center;
+}
+.main-datatable .cust-datatable>tbody td {
+   padding: 10px 15px 10px 18px;
+   color: #333232;
+   font-size: 15px;
+   font-weight: 500;
+   word-break: break-word;
+   border-color: #eee;
+   text-align: center;
+   vertical-align: middle;
+}
+.main-datatable .cust-datatable>tbody tr {
+   border-top: none;
+}
+.main-datatable .table > tbody > tr:nth-child(even) {
+   background: #f9f9f9;
+}
+
+.buttonActions{
+   border: none;
+}
+
+.btn-group.open .dropdown-toggle {
+   box-shadow: none;
+}
+.main-datatable .dropdown_icon {
+   display: inline-block;
+   color: #8a8a8a;
+   font-size: 12px;
+   border: 1px solid #d4d4d4;
+   padding: 10px 7px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.btn-group i{
+   color: #8e8e8e; 
+   margin: 2px;
+}
+.main-datatable .actionCust a {
+   display: inline-block;
+   color: #8a8a8a;
+   font-size: 12px;
+   cursor: pointer;
+}
+.main-datatable .dropdown-menu {
+   padding: 0;
+   border-radius: 4px;
+   box-shadow: 10px 10px 20px #c8c8c8;
+   margin-top: 10px;
+   left: -70px;
+   top: 32px;
+}
+.main-datatable .dropdown-menu > li > a {
+   display: block;
+   padding: 8px 25px;
+   clear: both;
+   font-weight: normal;
+   line-height: 1.42857;
+   color: #333333;
+   white-space: nowrap;
+   border-bottom: 1px solid #d4d4d4;
+}
+.main-datatable .dropdown-menu > li > a:hover, 
+.main-datatable .dropdown-menu > li > a:focus {
+   color: #fff;
+   background: #007bff;
+}
+.main-datatable .dropdown-menu > li > a:hover i{
+   color: #fff; 
+}
+
+.dropdown-menu i {
+   margin-right: 8px;
+}
+.main-datatable .dataTables_wrapper .dataTables_paginate .paginate_button {
+   color: #999999 !important;
+   background-color: #f6f6f6 !important;
+   border-color: #d4d4d4 !important;
+   border-radius: 40px;
+   margin: 5px 3px;
+   font-size: 1.3rem;
+}
+.main-datatable .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+   color: #fff !important;
+   border: 1px solid #3d96f5 !important;
+   background: #4da3ff !important;
+   box-shadow: none;
+}
+.main-datatable .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.main-datatable .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+   color: #fff !important;
+   border-color: transparent !important;
+   background: #007bff !important;
+}
+.main-datatable .dataTables_paginate {
+   padding-top: 0 !important;
+   margin: 15px 10px;
+   float: right !important;
+}
+.mode{
+   padding:4px 10px;
+   line-height: 13px;
+   color:#fff;
+   font-weight: 400;
+   border-radius: 1rem;
+   -webkit-border-radius: 1rem;
+   -moz-border-radius: 1rem;
+   -ms-border-radius: 1rem;
+   -o-border-radius: 1rem;
+   font-size:11px;
+   letter-spacing: 0.4px;
+}
+.status_pending{
+   background-color: #ffcc00;
+}
+.status_declined{
+   background-color: #8B0000;
+}
+.status_finished{
+   background-color: #8b9096;
+}
+.status_success{
+   background-color: #13853f;
+}
+
+/* Property Visit */
+.mode_1{
+   background-color:  #03a9f3;
+}
+
+/* Reservation */
+.mode_2{
+   background-color: #ff8000;
+}
+
+.mode_3{
+   background-color: #ff2ab8;
+}
+.mode_4{
+   background-color: #800bad;
+}
+.mode_5{
+   background-color: #099269;
+}
+.mode_6{
+   background-color: #2d5035;
+}
+.mode_7{
+   background-color: #270f7c;
+}
+.mode_8{
+   background-color: #ffb24e;
+}
+
+
+
+@media only screen and (max-width:1200px){
+   .dtableoverflow-x{
+       overflow-x:scroll;
+   }
+   .dtableoverflow-x::-webkit-scrollbar{
+       width:5px;
+       height:6px;
+   }
+   .dtableoverflow-x::-webkit-scrollbar-thumb{
+       background-color: #888;
+   }
+   .dtableoverflow-x::-webkit-scrollbar-track{
+        background-color: #f1f1f1;
+   }
+}
+
+
+
+/* Reserve Details */
+
+.modalViewDetails{
+   background-color: var(--cultured-2);
+}
+
+.bgViewDetails{
+   background: url('../images/header3.png') no-repeat bottom;
+   background-size: 100%;
+}
+
+.modalViewDetails .viewDormName{
+   font-size: 35px;
+   color: var(--prussian-blue);
+   font-weight: 600;
+   text-align: center;
+}
+
+.modalViewDetails .viewDormAddress{
+   font-size: 14px;
+   color: var(--cadet);
+   font-weight: 400;
+   text-align: center;
+}
+
+.modalViewDetails .viewDormType{
+   font-size: 25px;
+   color: var(--prussian-blue);
+   font-weight: 600;
+   text-align: center;
+}
+
+.modalViewDetails .viewDormPrice{
+   font-size: 20px;
+   color: var(--prussian-blue);
+   font-weight: 600;
+   text-align: center;
+}
+
+.modalViewDetails .viewDormSlash{
+   font-size: 20px;
+   color: var(--prussian-blue);
+   font-weight: 600;
+   text-align: center;
+}
+
+
+.modalViewDetails .viewDetailsSlots .viewDetailsTitle{
+   font-size: 17px;
+   color: var(--cadet);
+   font-weight: 500;
+}
+
+.modalViewDetails .viewDetailsSlots .viewDetailsSubtitle{
+   font-size: 19px;
+   color: var(--prussian-blue);
+   margin-left: 20px;
+   font-weight: 600;
+}

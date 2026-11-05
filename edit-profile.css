@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --body-color: #E4E9F7;
+   --light-bg: #eee;
+      	/* Variables for storing colors */
+	--card-clr: #161922;
+	--body-clr: #191d28;
+	--primary-clr: #f0bf6a;
+	--heading-clr: #dadada;
+	--text-clr: #767a86;
+
+   --dark-jungle-green: hsl(188, 63%, 7%);
+   --prussian-blue: hsl(200, 69%, 14%);
+   --prussian-pale: hsl(201, 19%, 42%);
+   --raisin-black-1: hsl(227, 29%, 13%);
+   --raisin-black-2: hsl(229, 17%, 19%);
+   --yellow-green: hsl(89, 72%, 45%);
+   --orange-soda: hsl(9, 100%, 62%);
+   --orange-tangy: hsla(9, 100%, 62%, 0.1);
+   --orange-pale: hsl(9, 100%, 73%);
+   --cultured-1: hsl(0, 0%, 93%);
+   --cultured-2: hsl(192, 24%, 96%);
+   --misty-rose: hsl(7, 56%, 91%);
+   --alice-blue: hsl(210, 100%, 97%);
+   --seashell: hsl(8, 100%, 97%);
+   --cadet: hsl(200, 15%, 43%);
+   --white: hsl(0, 0%, 100%);
+   --black: hsl(0, 0%, 0%);
+   --opal: hsl(180, 20%, 62%);
+}
+
+body{
+    background-color:#f2f6fc;
+    color:#69707a;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+.bgcolor{
+    background-color: #f0f7ff;
+}
+
+.profile .img-account-profile {
+    height: 10rem;
+}
+
+.profile .rounded-circle {
+    border-radius: 50% !important;
+}
+
+.profile .card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+
+.profile .editPfp{
+    border-radius: 20px;
+    background-color: var(--prussian-blue);
+    color: var(--cultured-2);
+    font-size: 1.3rem;
+}
+
+.profile .editPfp:hover{
+    background-color: var(--orange-soda);
+    color: var(--cultured-2);
+    font-size: 1.3rem;
+}
+
+.profile .backPfp{
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+.profile .uploadPfp{
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+
+.profile .pfp {
+    font-size: 1.5rem;
+}
+
+.profile .card .edit-profile.card-header {
+    font-weight: 500;
+}
+
+.profile .card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+
+.profile .card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+    font-size: 2rem;
+}
+
+.profile .form-control, .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.profile .nav-borders .nav-link.active {
+    color: #0061f2;
+    border-bottom-color: #0061f2;
+}
+.profile .nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.profile .edt-container {
+    padding-top: none;
+}
+
+
+.profile .form-control {
+/* Existing styles */
+position: relative;
+}
+
+.profile .form-control::placeholder {
+position: absolute;
+top: -1;
+left: 1.125rem; /* Adjust the left value as needed */
+font-size: 1.5rem; /* Adjust the font size as needed */
+color: #69707a;
+transition: all 0.1s ease-in-out;
+pointer-events: none;
+}
+
+.profile label{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.profile .form-control:focus::placeholder,
+.form-control:not(:placeholder-shown)::placeholder {
+top: -0.0rem; /* Adjust the top value as needed */
+font-size: 0.640rem; /* Adjust the reduced font size as needed */
+color: #0061f2; /* Change the color when the input is focused or has value */
+}
+
+.profile .disabled-button {
+background-color: grey;
+cursor: not-allowed;
+}
+
+@media screen and (min-width: 1440px) {
+    .profile .edt-container{
+        padding-top: 200px;
+    }
+    
+}
+
+@media (max-width:767px) {
+    .profile .edt-container{
+        padding-bottom: 40px;
+    }
+ }
